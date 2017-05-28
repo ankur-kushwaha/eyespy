@@ -9,11 +9,16 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  TouchableOpacity
 } from 'react-native';
+
+import { NativeModules } from 'react-native';
+ToastAndroid = NativeModules.CustomToastAndroid;
 
 export default class firstReact extends Component {
   render() {
+
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
@@ -22,10 +27,13 @@ export default class firstReact extends Component {
         <Text style={styles.instructions}>
           To get started
         </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu butev menu
-        </Text>
+        <TouchableOpacity onPress={
+          () => {
+            ToastAndroid.show('Awesome', ToastAndroid.SHORT);
+          }
+        }>
+          <Text>Test</Text>
+        </TouchableOpacity>
       </View>
     );
   }
@@ -50,4 +58,8 @@ const styles = StyleSheet.create({
   },
 });
 
+import { task } from './bgTask';
+
 AppRegistry.registerComponent('firstReact', () => firstReact);
+console.log("-----------------------------------");
+AppRegistry.registerHeadlessTask('SomeTaskName', () => task);
