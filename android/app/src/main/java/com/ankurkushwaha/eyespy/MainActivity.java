@@ -1,47 +1,36 @@
 package com.ankurkushwaha.eyespy;
 
 import android.content.Intent;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
+import android.view.KeyEvent;
 
-import com.ankurkushwaha.eyespy.service.MyTaskService;
+import com.facebook.react.ReactInstanceManager;
+import com.facebook.react.ReactRootView;
+import com.facebook.react.common.LifecycleState;
+import com.facebook.react.modules.core.DefaultHardwareBackBtnHandler;
+import com.facebook.react.shell.MainReactPackage;
 
-public class MainActivity extends AppCompatActivity {
+/**
+ * Created by ankur.kushwaha on 5/27/17.
+ */
 
+
+
+import com.facebook.react.ReactActivity;
+
+public class MainActivity extends ReactActivity {
+
+    /**
+     * Returns the name of the main component registered from JavaScript.
+     * This is used to schedule rendering of the component.
+     */
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
-        Button btn=(Button)findViewById(R.id.button2);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d(getLocalClassName(),"test");
-
-                Intent intent = new Intent();
-                intent.setAction("com.tutorialspoint.CUSTOM_INTENT");
-                sendBroadcast(intent);
-
-            }
-        });
+    protected String getMainComponentName() {
+        return "firstReact";
     }
-
 }
+

@@ -4,21 +4,20 @@
  * @flow
  */
 
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {
   AppRegistry,
   StyleSheet,
   Text,
   View,
-  TouchableOpacity
-} from 'react-native';
+  TouchableOpacity,
+  NativeModules
+} from 'react-native'
 
-import { NativeModules } from 'react-native';
-ToastAndroid = NativeModules.CustomToastAndroid;
+var ToastAndroid = NativeModules.CustomToastAndroid
 
 export default class firstReact extends Component {
   render() {
-
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
@@ -29,13 +28,13 @@ export default class firstReact extends Component {
         </Text>
         <TouchableOpacity onPress={
           () => {
-            ToastAndroid.show('Awesome', ToastAndroid.SHORT);
+            ToastAndroid.show('Awesome', ToastAndroid.SHORT)
           }
         }>
           <Text>Test</Text>
         </TouchableOpacity>
       </View>
-    );
+    )
   }
 }
 
@@ -44,22 +43,20 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#F5FCFF'
   },
   welcome: {
     fontSize: 20,
     textAlign: 'center',
-    margin: 10,
+    margin: 10
   },
   instructions: {
     textAlign: 'center',
     color: '#333333',
-    marginBottom: 5,
-  },
-});
+    marginBottom: 5
+  }
+})
 
-import { task } from './bgTask';
+import { task } from './bgTask'
 
-AppRegistry.registerComponent('firstReact', () => firstReact);
-console.log("-----------------------------------");
-AppRegistry.registerHeadlessTask('SomeTaskName', () => task);
+AppRegistry.registerComponent('firstReact', () => firstReact)
