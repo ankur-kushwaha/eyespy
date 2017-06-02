@@ -1,11 +1,9 @@
-package com.ankurkushwaha.eyespy;
+package com.ankurkushwaha.eyespy.react;
 
 /**
  * Created by ankur.kushwaha on 5/27/17.
  */
 
-
-import android.util.Log;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;

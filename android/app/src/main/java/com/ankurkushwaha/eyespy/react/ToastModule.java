@@ -1,4 +1,4 @@
-package com.ankurkushwaha.eyespy;
+package com.ankurkushwaha.eyespy.react;
 
 /**
  * Created by ankur.kushwaha on 5/27/17.

@@ -2,6 +2,7 @@ package com.ankurkushwaha.eyespy;
 
 import android.app.Application;
 
+import com.ankurkushwaha.eyespy.react.CustomReactPackage;
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;

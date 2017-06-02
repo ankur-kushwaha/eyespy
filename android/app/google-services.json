@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "667033884561",
+    "firebase_url": "https://eyespy-52658.firebaseio.com",
+    "project_id": "eyespy-52658",
+    "storage_bucket": "eyespy-52658.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:667033884561:android:5e1db24db2892f8c",
+        "android_client_info": {
+          "package_name": "com.ankurkushwaha.eyespy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "667033884561-sq2lgqmma9e2tmkfhcrao9ndl43vdnfc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ankurkushwaha.eyespy",
+            "certificate_hash": "33a2027355d418e187213752812b26c9be9befe6"
+          }
+        },
+        {
+          "client_id": "667033884561-m881mi5k55dgb2rjii0okc2ob3ntsqnh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkmxws0FXAOJG4sdSdLqjKr7TrPzCsBW8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "667033884561-m881mi5k55dgb2rjii0okc2ob3ntsqnh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

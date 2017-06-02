@@ -1,4 +1,4 @@
-package com.ankurkushwaha.eyespy;
+package com.ankurkushwaha.eyespy.receiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
